@@ -75,6 +75,17 @@ const FormBanner = () => {
                     error={error.link}
                 />
             </Box>
+            <Box sx={{ width: '400px' }}>
+                <label>{error.cta ? error.cta : 'Cta'}</label>
+                <Input
+                    fullWidth
+                    name='cta'
+                    value={data.cta}
+                    onChange={onChange}
+                    disabled={disableInputs}
+                    error={error.cta}
+                />
+            </Box>
             <Box sx={{
                 width: '100%',
                 display: 'flex',
